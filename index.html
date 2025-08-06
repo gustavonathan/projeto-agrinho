@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cidade e Campo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Conexão Cidade e Campo</h1>
-        <nav>
-            <ul>
-                <li><a href="#cidade-para-campo">Cidade para o Campo</a></li>
-                <li><a href="#campo-para-cidade">Campo para a Cidade</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="cidade-para-campo">
-        <h2>Vantagens da Cidade para o Campo</h2>
-        <ul>
-            <li><strong>Infraestrutura:</strong> A cidade oferece infraestrutura de transporte, energia e comunicação que facilita a logística no campo.</li>
-            <li><strong>Mercado:</strong> A proximidade das cidades cria um mercado mais acessível para os produtos agrícolas, promovendo melhores vendas.</li>
-            <li><strong>Educação e saúde:</strong> Acesso a instituições de ensino e hospitais de maior qualidade.</li>
-        </ul>
+    <section class="conteudo">
+        <div class="conteudo-titulo">
+            <img src="unlock.svg" alt="cadeado fechado">
+            <h2 class="titulo-principal">Gerador de senhas do Gustavo</h2>
+            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
+        </div>
+        <div class="conteudo-senha">
+            <label for="senha">Senha</label>
+            <input name="senha" type="text" id="campo-senha">
+        </div>
+        <div class="parametro">
+            <h3 class="parametro-titulo">Personalize sua senha</h3>
+            <div class="parametro-coluna__senha">
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+                    <div class="parametro-senha-botoes">
+                        <button class="parametro-senha__botao">-</button>
+                        <p class="parametro-senha__texto">12</p>
+                        <button class="parametro-senha__botao">+</button>
+                    </div>
+                </div>
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Características da senha</h4>
+                    <div class="parametro-senha-checkbox">
+                        <input name="maiusculo" type="checkbox" class="checkbox" checked>
+                        <label for="maiusculo">Letras maiúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="minusculo" type="checkbox" class="checkbox">
+                        <label for="minusculo">Letras minúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="numero" type="checkbox" class="checkbox">
+                        <label for="numero">Números</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="simbolo" type="checkbox" class="checkbox">
+                        <label for="simbolo">Símbolos</label>
+                    </div>
+                </div>
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Força da senha</h4>
+                    <div class="barra"></div>
+                    <div class="forca fraca"></div>
+                    <div class="parametro-senha-textos">
+                        <p>Fraca</p>
+                        <p>Média</p>
+                        <p>Forte</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <section id="campo-para-cidade">
-        <h2>Vantagens do Campo para a Cidade</h2>
-        <ul>
-            <li><strong>Agronegócio:</strong> O campo fornece alimentos e matérias-primas para as indústrias da cidade.</li>
-            <li><strong>Qualidade de vida:</strong> A vida no campo pode melhorar a qualidade de vida dos habitantes da cidade, trazendo produtos frescos e naturais.</li>
-            <li><strong>Desenvolvimento sustentável:</strong> O campo pode proporcionar práticas agrícolas mais sustentáveis e naturais que beneficiam as cidades.</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Cidade e Campo. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
